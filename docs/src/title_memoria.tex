@@ -1,0 +1,40 @@
+\renewcommand{\docshorttitle}{Royal Express · Memoria técnica}
+\renewcommand{\doctitle}{Royal Express}
+\renewcommand{\docsubtitle}{Memoria técnica de Royal Express · sistema de gestión logística para LogistiXpress}
+\renewcommand{\docversion}{1.0.0}
+\renewcommand{\docdate}{Noviembre de 2026}
+\hypersetup{
+  pdftitle={Royal Express · Memoria técnica},
+  pdfauthor={Royal Express · Equipo de desarrollo},
+  pdfsubject={Memoria técnica de Royal Express · sistema de gestión logística para LogistiXpress},
+  pdfkeywords={MVC, CRUD, PostgreSQL, FastAPI, RBAC, rutas, picking}
+}
+\begin{titlepage}
+  \thispagestyle{empty}
+  \centering
+  \vspace*{1.8cm}
+  {\color{RoyalOrange}\rule{\linewidth}{2.4pt}}\\[0.45cm]
+  {\footnotesize\bfseries\color{RoyalGray}LOGISTIXPRESS · CENTRO DE DISTRIBUCIÓN}\\[0.35cm]
+  {\Huge\bfseries\color{RoyalNavy} Royal Express}\\[0.25cm]
+  {\Large\color{RoyalNavy} Memoria técnica}\\[0.1cm]
+  {\large\color{RoyalGray} Arquitectura, modelo de datos e implementación}\\[0.45cm]
+  {\color{RoyalOrange}\rule{\linewidth}{1pt}}\\[1.4cm]
+  \begin{minipage}{0.86\linewidth}
+    \centering
+    {\large\color{RoyalGray} Documento de cierre técnico: decisiones de arquitectura, MVC, CRUD,
+    RBAC, algoritmos de rutas, recepción, picking/packing, validación y despliegue OCI.}
+  \end{minipage}\\[2.2cm]
+  \begin{tabular}{@{}ll@{}}
+    \textbf{Producto} & Royal Express · LogistiXpress \\
+    \textbf{Documento} & Memoria técnica \\
+    \textbf{Versión} & \docversion \\
+    \textbf{Fecha} & \docdate \\
+    \textbf{Plataforma} & FastAPI · PostgreSQL 16 · Docker/Podman \\
+    \textbf{Estado} & Implementación operativa · versión 1.0.0 \\
+  \end{tabular}\\[2.4cm]
+  \vfill
+  {\footnotesize\color{RoyalGray} Documento de Royal Express para LogistiXpress.\\
+  Uso interno del centro de distribución.}
+\end{titlepage}
+\tableofcontents
+\newpage

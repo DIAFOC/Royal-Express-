@@ -1,0 +1,79 @@
+% -----------------------------------------------------------------------------
+% Plantilla Royal Express · Manual y memoria técnica
+% -----------------------------------------------------------------------------
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
+\setotherlanguage{english}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{etoolbox}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\definecolor{RoyalOrange}{HTML}{C2410C}
+\definecolor{RoyalNavy}{HTML}{0B1A2C}
+\definecolor{RoyalGray}{HTML}{5B6B7C}
+\definecolor{RoyalSoft}{HTML}{FDF3EC}
+\definecolor{RoyalRule}{HTML}{E7D9CE}
+
+\hypersetup{hidelinks}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt plus 1pt}
+\setlength{\emergencystretch}{3em}
+\renewcommand{\arraystretch}{1.14}
+
+\titleformat{\section}
+  {\Large\bfseries\color{RoyalNavy}}
+  {\thesection}{0.7em}{}
+  [\vspace{2pt}{\color{RoyalOrange}\rule{\linewidth}{1.1pt}}]
+\titleformat{\subsection}
+  {\large\bfseries\color{RoyalOrange}}
+  {\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{RoyalNavy}}
+  {\thesubsubsection}{0.5em}{}
+\titlespacing*{\section}{0pt}{16pt}{7pt}
+\titlespacing*{\subsection}{0pt}{12pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{9pt}{3pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\color{RoyalGray}\docshorttitle}
+\fancyhead[R]{\footnotesize\color{RoyalGray}\leftmark}
+\fancyfoot[C]{\footnotesize\color{RoyalGray}\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{RoyalRule}\leaders\hrule height \headrulewidth\hfill}}
+
+\let\oldquote\quote
+\let\endoldquote\endquote
+\renewenvironment{quote}
+  {\begin{oldquote}\small\color{RoyalNavy}}
+  {\end{oldquote}}
+
+\AtBeginEnvironment{longtable}{\small}
+\AtBeginEnvironment{tabular}{\small}
+\setlength{\LTpre}{8pt}
+\setlength{\LTpost}{8pt}
+
+\providecommand{\docshorttitle}{Royal Express}
+\providecommand{\doctitle}{Royal Express}
+\providecommand{\docsubtitle}{Documento de desarrollo}
+\providecommand{\docversion}{1.0.0}
+\providecommand{\docdate}{Noviembre de 2026}
+
+% Cajas de aviso sin tcolorbox: filete lateral y fondo suave.
+\newenvironment{royalnote}[1]{%
+  \par\medskip\noindent
+  \begin{minipage}{\linewidth}
+  \color{RoyalNavy}\small
+  \textbf{\textcolor{RoyalOrange}{#1.}}\ 
+}{%
+  \par\end{minipage}\par\medskip
+}

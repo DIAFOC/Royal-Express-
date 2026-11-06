@@ -1,0 +1,40 @@
+\renewcommand{\docshorttitle}{Royal Express · Manual de usuario}
+\renewcommand{\doctitle}{Royal Express}
+\renewcommand{\docsubtitle}{Manual de usuario de Royal Express · sistema de gestión logística para LogistiXpress}
+\renewcommand{\docversion}{1.0.0}
+\renewcommand{\docdate}{Noviembre de 2026}
+\hypersetup{
+  pdftitle={Royal Express · Manual de usuario},
+  pdfauthor={Royal Express · Equipo de desarrollo},
+  pdfsubject={Manual de usuario de Royal Express para LogistiXpress},
+  pdfkeywords={WMS, logística, rutas, rastreo, PostgreSQL, FastAPI}
+}
+\begin{titlepage}
+  \thispagestyle{empty}
+  \centering
+  \vspace*{1.8cm}
+  {\color{RoyalOrange}\rule{\linewidth}{2.4pt}}\\[0.45cm]
+  {\footnotesize\bfseries\color{RoyalGray}LOGISTIXPRESS · CENTRO DE DISTRIBUCIÓN}\\[0.35cm]
+  {\Huge\bfseries\color{RoyalNavy} Royal Express}\\[0.25cm]
+  {\Large\color{RoyalNavy} Manual de usuario}\\[0.1cm]
+  {\large\color{RoyalGray} Sistema de gestión de almacén y reparto}\\[0.45cm]
+  {\color{RoyalOrange}\rule{\linewidth}{1pt}}\\[1.4cm]
+  \begin{minipage}{0.86\linewidth}
+    \centering
+    {\large\color{RoyalGray} Esta guía describe la operación diaria del panel: maestros, recepción,
+    picking, packing, rutas, entregas, rastreo, inventario, auditoría y reportes.}
+  \end{minipage}\\[2.2cm]
+  \begin{tabular}{@{}ll@{}}
+    \textbf{Producto} & Royal Express · LogistiXpress \\
+    \textbf{Documento} & Manual de usuario \\
+    \textbf{Versión} & \docversion \\
+    \textbf{Fecha} & \docdate \\
+    \textbf{Plataforma} & Navegador web · loopback · PostgreSQL 16 \\
+    \textbf{Estado} & Implementación operativa · versión 1.0.0 \\
+  \end{tabular}\\[2.4cm]
+  \vfill
+  {\footnotesize\color{RoyalGray} Documento de Royal Express para LogistiXpress.\\
+  Uso interno del centro de distribución.}
+\end{titlepage}
+\tableofcontents
+\newpage
