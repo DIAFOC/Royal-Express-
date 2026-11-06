@@ -35,7 +35,7 @@ sudo docker compose up --build
 
 Abre `http://127.0.0.1:8000`.
 
-> `down -v` es para la primera ejecución o cuando cambia el esquema: elimina el volumen de PostgreSQL. En ejecuciones normales usa `sudo docker compose down` y luego `up`.
+> `down -v` es para la primera ejecución o cuando cambia el esquema: elimina el volumen de PostgreSQL. En ejecuciones normales use `sudo docker compose down` y luego `up`.
 
 Cuentas iniciales:
 
@@ -102,8 +102,6 @@ La colección está en `bruno/Royal Express`.
 
 - [`Manual_de_Usuario_Royal_Express.pdf`](Manual_de_Usuario_Royal_Express.pdf) — operación del panel, flujos, estados, snippets y solución de problemas.
 - [`Memoria_Tecnica_Royal_Express.pdf`](Memoria_Tecnica_Royal_Express.pdf) — arquitectura, modelo de datos, MVC, algoritmos, seguridad, despliegue y validación.
-- [`docs/VALIDACION_REQUERIMIENTOS.md`](docs/VALIDACION_REQUERIMIENTOS.md) — matriz de cumplimiento y CRUD.
-- Los fuentes de los PDF están en `docs/src/` y se regeneran con `./docs/src/build_docs.sh`.
 - API interactiva: `http://127.0.0.1:8000/docs`.
 
 ## Estructura
